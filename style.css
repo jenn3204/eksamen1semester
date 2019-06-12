@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*** Index.html ***/
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 8px;
+    margin: 2px;
+    font-weight: bold;
+    border: 1.2px solid black;
+}
+
+nav a:hover {
+    color: burlywood;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1rem 1.5rem;
+}
+
+#splash {
+    background-image: url(splash/header.jpg);
+    width: 100vw;
+    height: 120vw;
+    background-size: cover;
+    background-position: 70% 0%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+footer {
+    background-image: url(splash/footer.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 20vw;
+    background-position: 0% 0%;
+    text-align: right;
+    position: relative;
+}
+
+#footertxt {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-transform: uppercase;
+}
+
+@media (orientation: landscape) {
+    #splash {
+        width: 100%;
+        height: 48vw;
+        background-position: 0% 0%;
+    }
+}
+
+#om {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#omtxt {
+    width: 400px;
+    border: 3px solid black;
+    margin: 0 35vw;
+}
+
+#omimg {
+    background-image: url(splash/splash2.jpg);
+    width: 300px;
+    height: 175px;
+    background-size: 100%;
+    margin: 0 35vw;
+}
+
+.gone {
+    height: 0;
+    font-size: 0rem;
+}

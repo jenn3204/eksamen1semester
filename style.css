@@ -4,10 +4,8 @@ body {
     background-color: whitesmoke;
 }
 
-h2 {
-    margin: 0;
-    font-family: 'Poiret One', cursive;
-    font-size: 1.2rem;
+img {
+    width: 100%;
 }
 
 h1 {
@@ -15,6 +13,23 @@ h1 {
     font-family: 'Poiret One', cursive;
     font-size: 4rem;
     font-weight: bold;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
 }
 
 header {
@@ -43,6 +58,8 @@ header nav a:hover {
     color: #A7BECA;
 }
 
+/***forside***/
+
 #splash {
     background-image: url(splash/splash.jpg);
     width: 100%;
@@ -52,6 +69,42 @@ header nav a:hover {
     margin: 0 auto;
     max-width: 1300px;
 
+}
+
+#portfolio {
+    text-align: center;
+    margin: 0 7vw;
+    text-align: center;
+    padding: 5vw 0 0 0;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    flex-basis: 1;
+    flex-grow: 200px;
+    margin: 10px;
+}
+
+#portfolio a:hover {
+    opacity: 20%;
+}
+
+#col1 {
+    background-image: url(knapper/stilartsite-100.jpg);
+    background-size: 100%;
+}
+
+#col2 {
+    background-image: url(knapper/p%C3%A5skespillet-100.jpg);
+    background-size: 100%;
 }
 
 footer {
@@ -71,6 +124,40 @@ footer {
     left: 45vw;
 }
 
+/*** portfolio.html ***/
+
+#stilartsite {
+    padding: 8vw;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.col1 {
+    flex-basis: 1;
+    flex-grow: 500px;
+    margin: 0 10vw 0 0;
+}
+
+.col2 {
+    flex-basis: 1;
+    flex-grow: 500px;
+}
+
+/***klasser***/
+
+.gone {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+
+/*** media ***/
+
 @media (orientation: landscape) {
     #splash {
         width: 100%;
@@ -79,45 +166,13 @@ footer {
     }
 
     footer {
-        background-image: url(splash/footer.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 130px;
-        text-align: center;
-        position: relative;
         background-position: 0% 0%;
     }
-
 }
 
-#portfolio {
-    text-align: center;
-    margin: 0 7vw;
-    text-align: center;
-    padding: 5vw 0 0 0;
-}
-
-.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.col {
-    border: 1px solid black;
-    height: 200px;
-    width: 200px;
-    flex-basis: 1;
-    flex-grow: 200px;
-    margin: 10px;
-}
-
-#om {
-    text-align: center;
-    border-top: 2px solid black;
-    margin: 0 5vw;
-}
-
-img {
-    width: 100%;
+@media only screen and (min-width: 600px) {
+    .col {
+        width: 250px;
+        height: 250px;
+    }
 }

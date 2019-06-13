@@ -1,105 +1,123 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #E9D6DC;
+    background-color: whitesmoke;
 }
 
-/*** Index.html ***/
+h2 {
+    margin: 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2rem;
+}
 
-nav a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.3rem;
-    padding: 8px;
-    margin: 2px;
+h1 {
+    margin: 1vw 0 0 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 4rem;
     font-weight: bold;
-    border: 1.2px solid black;
-}
-
-nav a:hover {
-    color: burlywood;
 }
 
 header {
+    background-color: whitesmoke;
+    height: 50px;
     position: fixed;
     width: 100%;
-
+    text-align: right;
 }
 
 header nav {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin: 1rem 1.5rem;
+    text-align: center;
+    margin: 20px;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 1vw;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
+
+header nav a:hover {
+    color: #A7BECA;
 }
 
 #splash {
-    background-image: url(splash/header2-100.jpg);
-    width: 100vw;
-    height: 120vw;
+    background-image: url(splash/splash.jpg);
+    width: 100%;
+    height: 178vw;
     background-size: cover;
-    background-position: 60% 0%;
+    background-position: 50% 0%;
     margin: 0 auto;
     max-width: 1300px;
+
 }
 
 footer {
-    background-image: url(splash/footer3-100.jpg);
-    background-size: cover;
+    background-image: url(splash/footer.jpg);
     width: 100%;
-    height: 20vw;
-    background-position: 0% 0%;
-    text-align: right;
+    height: 130px;
+    background-size: cover;
+    background-position: 50% 0%;
+    margin: 0 auto;
+    max-width: 1300px;
     position: relative;
 }
 
 #footertxt {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    text-transform: uppercase;
+    bottom: 1vw;
+    left: 45vw;
 }
 
 @media (orientation: landscape) {
     #splash {
         width: 100%;
-        height: 48vw;
+        height: 56vw;
         background-position: 0% 0%;
     }
+
+    footer {
+        background-image: url(splash/footer.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 130px;
+        text-align: center;
+        position: relative;
+        background-position: 0% 0%;
+    }
+
+}
+
+#portfolio {
+    text-align: center;
+    margin: 0 7vw;
+    text-align: center;
+    padding: 5vw 0 0 0;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    flex-basis: 1;
+    flex-grow: 200px;
+    margin: 10px;
 }
 
 #om {
-    display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    border-top: 2px solid black;
+    margin: 0 5vw;
 }
 
-#omtxt {
-    width: 400px;
-    border: 3px solid black;
-    margin: 0 35vw;
-}
-
-#omimg {
-    background-image: url(splash/splash2.jpg);
-    width: 300px;
-    height: 175px;
-    background-size: 100%;
-    margin: 0 35vw;
-}
-
-.gone {
-    height: 0;
-    font-size: 0rem;
-    visibility: hidden;
-    width: 0;
-}
-
-/*** Portfolio ***/
-
-.section1 {
-    background-color: rosybrown;
-}
-
-.section2 {
-    background-color: aquamarine;
+img {
+    width: 100%;
 }

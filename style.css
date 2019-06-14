@@ -27,9 +27,21 @@ h3 {
     font-size: 1.2rem;
 }
 
+h4 {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 header {
@@ -127,32 +139,155 @@ footer {
 /*** portfolio.html ***/
 
 #stilartsite {
-    padding: 8vw;
-    border-top: 1px solid black;
+    padding: 60px 2vw 2vw 2vw;
+}
+
+.section2 {
+    padding: 0;
+    margin: 0 2vw;
+    border-bottom: 2px solid black;
+    text-align: right;
+}
+
+.section1 {
+    padding: 0;
+    margin: 0 2vw;
     border-bottom: 2px solid black;
 }
 
-.wrapper {
+.wrappervenstre {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.col1 {
+.wrapperhojre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.wrappervenstre a:hover,
+.wrapperhojre a:hover {
+    filter: saturate(50%);
+    transform: scale(1.05);
+    text-transform: uppercase;
+}
+
+.picvenstre {
+    width: 350px;
+    height: 195px;
+    margin: 0vw 2vw 2vw 0;
     flex-basis: 1;
-    flex-grow: 500px;
-    margin: 0 10vw 0 0;
+    flex-grow: 300px;
 }
 
-.col2 {
+.pichojre {
+    width: 350px;
+    height: 195px;
+    margin: 0vw 0vw 2vw 2vw;
     flex-basis: 1;
-    flex-grow: 500px;
+    flex-grow: 300px;
 }
 
-/***klasser***/
+#pic1 {
+    background-image: url(billeder/stilartsite1.png);
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+#pic2 {
+    background-image: url(billeder/stilartsite2.png);
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+#pic3 {
+    background-image: url(billeder/paaskespillet1.png);
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+#pic4 {
+    background-image: url(billeder/paaskespillet2.png);
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+#pic5 {
+    background-image: url(billeder/nudez1.png);
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+#pic6 {
+    background-image: url(billeder/nudez2.png);
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+#pic7 {
+    background-image: url(billeder/redesign1.png);
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+#pic8 {
+    background-image: url(billeder/redesign2.png);
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+#pic9 {
+    background-image: url(billeder/fronter4.png);
+    background-size: 100%;
+    border-radius: 10px;
+    width: 400px;
+    height: 276px;
+}
+
+.picvenstre:hover,
+.pichojre:hover {
+    transform: scale(1.3);
+}
+
+.knapvenstre {
+    padding: 13px 20px;
+    margin: 1vw 2vw 1vw 0;
+    width: 250px;
+    text-align: center;
+}
+
+.knaphojre {
+    padding: 13px 20px;
+    margin: 1vw 0vw 1vw 2vw;
+    width: 250px;
+    text-align: center;
+}
+
+#knap1 {
+    background-color: rosybrown;
+    border-radius: 20px;
+}
+
+#knap2 {
+    background-color: #d2b452;
+    border-radius: 20px;
+}
+
+/***klasser/animationer***/
 
 .gone {
     height: 0;
     width: 0;
     visibility: hidden;
+}
+
+.filter {
+    filter: saturate(50%);
+}
+
+.vokse {
+    transform: scale(1.2);
 }
 
 
@@ -174,5 +309,20 @@ footer {
     .col {
         width: 250px;
         height: 250px;
+    }
+
+    .section1 {
+        padding: 2vw 10vw 2vw 2vw;
+        margin: 0 10vw;
+    }
+
+    .section2 {
+        padding: 2vw 2vw 2vw 10vw;
+        margin: 0 10vw;
+    }
+
+    #pic9 {
+        width: 500px;
+        height: 345px;
     }
 }

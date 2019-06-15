@@ -49,7 +49,6 @@ header {
     height: 60px;
     position: fixed;
     width: 100%;
-    text-align: right;
 }
 
 header nav {
@@ -64,10 +63,35 @@ header nav a {
     font-size: 1.7rem;
     font-weight: bold;
     font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
 }
 
 header nav a:hover {
     color: #A7BECA;
+}
+
+#header2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#dropdownmenu {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 150px;
+    padding: 10px 0 0 0;
+    margin: 0;
+    position: relative;
+    bottom: 20px;
+}
+
+#dropdownmenu a {
+    padding: 5px 0;
 }
 
 /***forside***/
@@ -325,7 +349,8 @@ footer {
 
 .picvenstre:hover,
 .pichojre:hover {
-    transform: scale(1.3);
+    /**transform: scale(1.3);**/
+    cursor: zoom-in;
 }
 
 .knapvenstre {
@@ -362,7 +387,7 @@ footer {
 #omwrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: row;
 }
 
@@ -384,8 +409,7 @@ footer {
 /***klasser/animationer***/
 
 .gone {
-    height: 0;
-    width: 0;
+    max-height: 0;
     visibility: hidden;
 }
 
@@ -394,7 +418,7 @@ footer {
 }
 
 .vokse {
-    transform: scale(1.2);
+    transform: scale(2);
 }
 
 
@@ -422,13 +446,13 @@ footer {
     }
 
     #portfolio {
-        margin: 0 0 0 0;
+        margin: 0 10vw;
         padding: 5vw 0 0 0;
     }
 
     .col {
-        width: 260px;
-        height: 260px;
+        width: 200px;
+        height: 200px;
     }
 
     .section1 {
@@ -449,7 +473,7 @@ footer {
     /***om mig***/
 
     #om {
-        padding: 5vw 0;
+        padding: 5vw 0 3vw 0;
         margin: 0 15vw;
     }
 
@@ -457,6 +481,15 @@ footer {
         justify-content: flex-start;
     }
 
+    #portrait {
+        height: 350px;
+        width: 316px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
     #portrait {
         height: 500px;
         width: 451px;

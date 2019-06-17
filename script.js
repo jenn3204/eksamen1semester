@@ -3,24 +3,6 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
     console.log("siden vises");
 
-    if (document.querySelector("#col1")) {
-
-        document.querySelector("#col1").classList.remove("col");
-        document.querySelector("#col2").classList.remove("col");
-        document.querySelector("#col3").classList.remove("col");
-        document.querySelector("#col4").classList.remove("col");
-        document.querySelector("#col5").classList.remove("col");
-        document.querySelector("#col6").classList.remove("col");
-        document.querySelector("#col7").classList.remove("col");
-        document.querySelector("#col8").classList.remove("col");
-        document.querySelector("#portfolio").classList.add("hidden");
-        document.querySelector("footer").classList.add("hidden");
-
-        document.querySelector("#seportfolio").addEventListener("click", showPortfolio);
-        document.querySelector("#drop").addEventListener("click", showPortfolio);
-
-
-    }
     // drop  down menu
 
     document.querySelector("#drop").addEventListener("mouseenter", dropMenu);
@@ -103,22 +85,6 @@ function sidenVises() {
 
     }
 
-}
-
-function showPortfolio() {
-
-    document.querySelector("#col1").classList.toggle("col");
-    document.querySelector("#col2").classList.toggle("col");
-    document.querySelector("#col3").classList.toggle("col");
-    document.querySelector("#col4").classList.toggle("col");
-    document.querySelector("#col5").classList.toggle("col");
-    document.querySelector("#col6").classList.toggle("col");
-    document.querySelector("#col7").classList.toggle("col");
-    document.querySelector("#col8").classList.toggle("col");
-    document.querySelector("#portfolio").classList.toggle("hidden");
-    document.querySelector("footer").classList.toggle("hidden");
-
-    document.querySelector("#seportfolio").classList.toggle("pulse");
 }
 
 //drop down menu funktion

@@ -142,7 +142,7 @@ footer img {
     width: 100%;
     height: 178vw;
     background-size: cover;
-    background-position: 50% 0%;
+    background-position: 52% 0%;
     margin: 0 auto;
     max-width: 1300px;
 }
@@ -431,8 +431,8 @@ footer img {
 #portrait {
     background-image: url(billeder/portrait2.png);
     background-size: 100%;
-    height: 300px;
-    width: 271px;
+    height: 320px;
+    width: 289px;
 }
 
 #omtxt {
@@ -587,7 +587,6 @@ footer img {
         height: 350px;
         width: 316px;
     }
-
 
 }
 
